@@ -1,9 +1,3 @@
-## Apache 2.2
 Order deny,allow
 Deny from xxx.xxx.xxx.xxx
 Deny from xxx.xxx.xxx.xxy
-
-## Apache 2.4
-# Require all granted
-# Require not ip xxx.xxx.xxx.xxx
-# Require not ip xxx.xxx.xxx.xxy
