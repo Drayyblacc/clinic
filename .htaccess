@@ -1,9 +1,9 @@
-<FilesMatch "(\.(bak|config|dist|fla|inc|ini|log|psd|sh|sql|swp)|~)$">
-    ## Apache 2.2
-    Order allow,deny
-    Deny from all
-    Satisfy All
+## Apache 2.2
+Order deny,allow
+Deny from xxx.xxx.xxx.xxx
+Deny from xxx.xxx.xxx.xxy
 
-    ## Apache 2.4
-    # Require all denied
-</FilesMatch>
+## Apache 2.4
+# Require all granted
+# Require not ip xxx.xxx.xxx.xxx
+# Require not ip xxx.xxx.xxx.xxy
